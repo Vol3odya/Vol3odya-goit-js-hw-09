@@ -11,6 +11,7 @@ function start(){
     if (JSON.parse(data) == null) {
         return;
     }
+    
     if (JSON.parse(data).email == '' && JSON.parse(data).message == '') {
         return;
     }
