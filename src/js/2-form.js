@@ -1,17 +1,16 @@
 const formData = {
-    email:  "",
+    email: "",
     message: ""
 }
 
 const key = "feedback-form-state";
 const form = document.querySelector('.feedback-form');
 
-function start(){
+function start() {
     const data = localStorage.getItem(key);
     if (JSON.parse(data) == null) {
         return;
     }
-    
     if (JSON.parse(data).email == '' && JSON.parse(data).message == '') {
         return;
     }
